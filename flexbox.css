@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+* {
+  margin:0;
+  padding:0;
+  font-family:'Rock Salt', cursive;
+}
+p,button {
+  font-family:Arial, Helvetica, sans-serif;
+}
+section {
+  padding:70px 0;
+}
+
+header {
+  background-color:#000;
+  position:fixed;
+  z-index:10;
+  width:100%;
+  opacity:.5;
+}
+.logo {
+  flex:1;
+  padding:18px 0;
+}
+.logo a {
+  color:#fff;
+  text-decoration:none;
+}
+.menu {
+  flex:3;
+}
+
+nav {
+  display:flex;
+}
+
+.menu ul {
+  display:flex;
+  list-style:none;
+}
+.menu li {
+  flex:1;
+  text-align:center;
+}
+.menu a {
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+}
+
+#hero {
+  background:url(https://remublog.net/wp-content/uploads/2020/02/pc1.jpg);
+  width:100%;
+  background-size:cover;
+}
+.hero-text {
+  display:flex;
+  padding:15% 0px;
+}
+.hero-text-items {
+  color:#fff;
+  text-align:center;
+  width:50%;
+  margin:0 auto;
+  overflow-wrap:break-word;
+}
+.hero-text-items h2 {
+  font-size:3em;
+  margin:0, 0, 20px, 0;
+}
+.hero-text-items p {
+  font-size:18px;
+}
+.main-content {
+  display:flex;
+  flex-flow:row wrap;
+  padding:5% 0;
+}
+.main-item {
+  flex:1;
+  padding:3%;
+  text-align:center;
+}
+
+#contact {
+  background:url(https://remublog.net/wp-content/uploads/2020/02/pc3.jpg);
+  background-size:cover;
+}
+.contact-items {
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+.contact-items h2 {
+  color:#fff;
+  font-size:40px;
+  margin:0, 0, 18px, 0;
+}
+.contact-items input[type="text"] {
+  border-radius:10px;
+  margin:15px;
+  padding:15px;
+  width:50%;
+}
+.contact-items textarea {
+  border-radius:10px;
+  height:150px;
+  padding:15px;
+  width:50%;
+}
+.contact-items button {
+background:#2d89b9;
+color:#fff;
+display:block;
+font-size:20px;
+margin:25px, 0, 0, 0;
+padding:15px 80px;
+text-decoration:none;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:all .5s;
+}
+.contact-items button:hover {
+  background:#4a8fb2;
+}
+@media (max-width:780px){
+  nav {
+    flex-direction:column;
+    text-align:center;
+  }
+  .logo {
+    padding:18px, 0, 0;
+  }
+  .menu ul {
+  flex-direction:row;
+  margin:0;
+}
+.menu ul li {
+  padding:5px;
+}
+.hereo-text-items {
+  width:90%;
+  margin:0 auto;
+}
+.hero-text-items h2 {
+  font-size:1.5em;
+}
+.main-content {
+  flex-direction:column;
+}
+.contact-items input[type="text"] {
+  width:70%;
+}
+.contact-items textarea {
+  width:70%;
+}
+
+}
